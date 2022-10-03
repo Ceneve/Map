@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-md-10 offset-md-1">
+                <h1>{{ restaurant.name }}</h1>
+                <p>{{ restaurant.address }}</p>
+                <p>{{ restaurant.phone_number }}</p>
+                <p>{{ restaurant.short_description }}</p>
+                <p>{{ restaurant.description }}</p>
+            </div>
+        </div>
+    </div>
+    <a href="https://www.google.com/maps/?daddr={{ restaurant.latitude }},{{ restaurant.longitude }}">Как доехать</a>
+</body>
+</html>
